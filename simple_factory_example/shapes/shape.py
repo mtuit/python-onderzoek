@@ -1,7 +1,7 @@
 import abc
 
 
-class Shape(object):
+class Shape(metaclass=abc.ABCMeta):
 
     @abc.abstractmethod
     def calculate_surface(self):
